@@ -13,3 +13,59 @@
  *= require_tree .
  *= require_self
  */
+/* app/assets/stylesheets/application.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #202124;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  width: calc(100% - 52px);
+  padding: 10px;
+  margin-right: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  form input[type="text"] {
+    width: calc(100% - 22px);
+  }
+}
